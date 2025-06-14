@@ -16,7 +16,6 @@ app.get("/", function (req, res) {
 });
 // whoami endpoint
 app.get("/api/whoami", function (req, res) {
-  console.log("i am here");
   res.json({
     ipaddress: req.ip,
     language: req.headers["accept-language"],
